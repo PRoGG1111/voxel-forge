@@ -1,0 +1,21 @@
+[package]
+name = "voxel-forge"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Compact voxel sections and neighbor-aware greedy meshing without renderer dependencies"
+license = "MIT"
+keywords = ["voxel", "meshing", "gamedev", "palette", "chunk"]
+categories = ["game-development", "data-structures", "rendering::data-formats"]
+readme = "README.md"
+include = ["src/**", "examples/**", "benches/**", "tests/**", "docs/**", "benchmarks/*.md", "benchmarks/2026-10-19-windows.csv", "README.md", "LICENSE", "CHANGELOG.md", "PROVENANCE.md", "CONTRIBUTING.md"]
+
+[workspace]
+
+[[bench]]
+name = "core"
+harness = false
+
+[lints.rust]
+unsafe_code = "forbid"
+

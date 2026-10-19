@@ -1,0 +1,16 @@
+name: Integration feedback
+description: Share a real integration problem or improvement.
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: What are you building?
+      description: Describe the renderer, data model, and relevant constraints. A public project link is optional.
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: What worked and what blocked you?
+    validations:
+      required: true

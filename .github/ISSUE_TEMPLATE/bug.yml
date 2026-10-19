@@ -1,0 +1,22 @@
+name: Reproducible bug
+description: Report a storage, coordinate, or geometry error.
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include voxel IDs, local coordinates, and all relevant neighbor data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Toolchain, OS, and project version
+    validations:
+      required: true
